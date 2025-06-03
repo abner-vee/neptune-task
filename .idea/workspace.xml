@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc634db0-6851-4a4f-9378-aa28f5788a6b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/TicketManagerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/auditing/AuditingConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/mappers/FastJson2Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/mappers/MapperConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/security/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/security/CustomAccessDeniedHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/security/CustomAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/security/CustomAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/security/JwtService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/security/OAuth2AuthorizationServerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/security/RegisteredClientConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/security/ThymeLeafConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/swagger/FaviconConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/config/swagger/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/contoller/TicketController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/dto/APIResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/dto/CreateTicketRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/dto/TicketDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/entity/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/entity/AuditLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/entity/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/entity/BaseUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/entity/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/entity/Privilege.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/entity/Staff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/entity/Ticket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/AuthMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/GenderEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/IdentityType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/NotificationTarget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/PrivacyLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/PrivacyName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/ProfileStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/RelationStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/RelationType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/RoleEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/Theme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/UserTypeEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/enums/ViolationLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/exceptions/APIError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/exceptions/APIException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/exceptions/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/exceptions/UserNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/repository/AuditLogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/repository/CommentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/repository/RoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/repository/StaffRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/repository/TicketRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/service/AuditLogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/service/CommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/service/TicketService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/service/impl/AuditLogServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/service/impl/CommentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hahn assessment/ticket-manager/src/main/java/com/hahn/ticket_manager/service/impl/TicketServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/inventory-service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/inventory-service/src/main/java/com/neptunebank/inventory_service/entiy/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/inventory-service/src/main/java/com/neptunebank/inventory_service/enums/ProductStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/inventory-service/src/main/java/com/neptunebank/inventory_service/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/inventory-service/src/main/java/com/neptunebank/inventory_service/request/CreateProductRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/inventory-service/src/main/java/com/neptunebank/inventory_service/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/inventory-service/src/main/java/com/neptunebank/inventory_service/service/impl/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/inventory-service/src/main/proto/inventory.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/order-processing-frontend/src/app/order/model/order.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/order-service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/order-service/src/main/java/com/neptunebank/order_service/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/order-service/src/main/java/com/neptunebank/order_service/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NEPTUNE BANK TASK/order-service/src/main/proto/order.proto" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="TypeScript File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2xlyPbuhd1w3akEjzPywrUtUMNM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.inventory-service [clean,compile].executor": "Run",
+    "Maven.order-service [clean,compile].executor": "Run",
+    "Maven.order-service [clean,install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.InventoryServiceApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/mac/Desktop/ASSESSMENTS/NEPTUNE BANK TASK/order-processing-frontend/src/app/order/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/user/Desktop/NEPTUNE BANK TASK /order-processing-frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/order-processing-frontend/src/app/order/model" />
+      <recent name="$PROJECT_DIR$/inventory-service/src/main/proto" />
+      <recent name="$PROJECT_DIR$/order-service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/order-processing-frontend/src/app/product/service" />
+      <recent name="$PROJECT_DIR$/order-processing-frontend/src/app/product/model" />
+      <recent name="$PROJECT_DIR$/order-processing-frontend/src/app/product/components" />
+      <recent name="$PROJECT_DIR$/order-processing-frontend/src/app/order/component" />
+      <recent name="$PROJECT_DIR$/order-processing-frontend/src/app/order/service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
+    <configuration name="InventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="inventory-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.neptunebank.inventory_service.InventoryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.neptunebank.order_service.OrderServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc634db0-6851-4a4f-9378-aa28f5788a6b" name="Changes" comment="" />
+      <created>1748526936919</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748526936919</updated>
+      <workItem from="1748526946426" duration="5019000" />
+      <workItem from="1748619714704" duration="14093000" />
+      <workItem from="1748902902503" duration="13677000" />
+      <workItem from="1748935257241" duration="12773000" />
+      <workItem from="1748962944009" duration="1470000" />
+      <workItem from="1748987835517" duration="2504000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/neptunebank/order_service/controller/ProductController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/neptunebank/order_service/controller/ProductController.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/neptunebank/order_service/controller/ProductController.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/neptunebank/order_service/controller/ProductController.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
