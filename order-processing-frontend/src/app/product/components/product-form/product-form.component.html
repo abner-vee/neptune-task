@@ -1,0 +1,9 @@
+<form (ngSubmit)="addProduct()" #orderForm="ngForm">
+  <label for="name">Product:</label>
+  <input id="name" type="text" [(ngModel)]="name" name="name" required />
+
+  <label for="quantity">Quantity:</label>
+  <input id="quantity" type="number" [(ngModel)]="quantity" name="quantity" min="1" required />
+
+  <button type="submit" [disabled]="orderForm.invalid">Submit</button>
+</form>

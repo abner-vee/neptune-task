@@ -1,0 +1,61 @@
+<h2>Product List</h2>
+<table class="orders-table">
+  <thead>
+  <tr>
+    <th>S/N</th>
+    <th>Name</th>
+    <th>Quantity</th>
+    <th>Status</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let product of products; let i = index">
+    <td>{{ i + 1 }}</td>
+    <td>{{ product.name }}</td>
+    <td>{{ product.quantity }}</td>
+    <td>{{ product.status || 'N/A' }}</td>
+    <td class="actions-cell">
+      <button class="view-btn" (click)="openViewModal(product)">View</button>
+      <button class="delete-btn" (click)="openDeleteConfirmModal(product)">Delete</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<!-- View Modal -->
+<div class="modal-overlay" *ngIf="showViewModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Product Details</h3>
+      <button class="close-btn" (click)="closeViewModal()">X</button>
+    </div>
+    <div class="modal-body">
+      <p><strong>Name:</strong> {{ selectedProduct?.name }}</p>
+      <p><strong>Quantity:</strong> {{ selectedProduct?.quantity }}</p>
+      <p><strong>Status:</strong> {{ selectedProduct?.status }}</p>
+      <p><strong>ID:</strong> {{ selectedProduct?.id }}</p>
+    </div>
+    <div class="modal-footer">
+      <button class="view-btn" (click)="closeViewModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal-overlay" *ngIf="showDeleteConfirmModal">
+  <div class="modal-content delete-modal">
+    <div class="modal-header">
+      <h3>Confirm Deletion</h3>
+      <button class="close-btn" (click)="closeDeleteConfirmModal()">X</button>
+    </div>
+    <div class="modal-body">
+      <p>Are you sure you want to delete <strong>{{ productToDelete?.name }}</strong>?</p>
+      <p>This action cannot be undone.</p>
+    </div>
+    <div class="modal-footer">
+      <button class="cancel-btn" (click)="closeDeleteConfirmModal()">Cancel</button>
+      <button class="delete-btn" (click)="confirmDelete()">Delete</button>
+    </div>
+  </div>
+</div>

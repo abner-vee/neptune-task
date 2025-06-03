@@ -1,0 +1,12 @@
+<form (ngSubmit)="submitOrder()" #orderForm="ngForm">
+  <label for="name">Product:</label>
+  <select id="name" [(ngModel)]="selectedProduct" name="name" required>
+    <option value="" disabled selected>Select a product</option>
+    <option *ngFor="let p of products" [value]="p.name">{{ p.name }}</option>
+  </select>
+
+  <label for="quantity">Quantity:</label>
+  <input id="quantity" type="number" [(ngModel)]="quantity" name="quantity" min="1" required />
+
+  <button type="submit" [disabled]="orderForm.invalid">Submit</button>
+</form>

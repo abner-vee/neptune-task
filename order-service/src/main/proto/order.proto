@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_package = "com.neptunebank.order_service";
+option java_outer_classname = "InventoryProto";
+
+package inventory;
+
+message OrderRequest {
+  string product = 1;
+  int32 quantity = 2;
+}
+
+message OrderResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+service InventoryService {
+  rpc CheckAndUpdateStock(OrderRequest) returns (OrderResponse);
+}

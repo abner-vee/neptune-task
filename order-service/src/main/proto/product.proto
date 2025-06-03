@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option java_package = "com.neptunebank.order_service";
+option java_outer_classname = "ProductProto";
+
+package order;
+
+message CreateProduct {
+  string product = 1;
+  int32 quantity = 2;
+}
+
+message ProductDetails {
+  int64 id = 1;
+  string name = 2;
+  string status = 3;
+  int32 quantity = 4;
+}
+
+message ProductListResponse {
+  repeated ProductDetails productDetails = 1;
+}
+
+message GetProductByIdRequest {
+  int64 id = 1;
+}
+
+message DeleteProductByIdRequest {
+  int64 id = 1;
+}
+
+message DeleteProductByIdResponse {
+  string message = 1;
+}
+
+message Empty {}
+
+service ProductService {
+  rpc CreateProducts(CreateProduct) returns (ProductDetails);
+  rpc GetAllProducts(Empty) returns (ProductListResponse);
+  rpc GetProductById(GetProductByIdRequest) returns (ProductDetails);
+  rpc DeleteProductById(DeleteProductByIdRequest) returns (DeleteProductByIdResponse);
+}
