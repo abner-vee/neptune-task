@@ -24,6 +24,7 @@ export class OrderService {
   }
 
   deleteOrder(id: number): Observable<any> {
+    console.log("order id: " + id)
     return this.http.delete(`${this.apiUrl}/${id}`);
   }
 
