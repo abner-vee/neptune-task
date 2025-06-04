@@ -54,6 +54,7 @@ export class OrderListComponent {
 
   // --- Delete Confirmation Modal Methods ---
   openDeleteConfirmModal(name: string, id?: number): void {
+    console.log("order id " + id)
     this.orderIdToDelete = id as number;
     this.productToDeleteName = name;
     this.showDeleteConfirmModal = true;
