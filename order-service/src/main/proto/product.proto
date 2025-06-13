@@ -35,9 +35,15 @@ message DeleteProductByIdResponse {
 
 message Empty {}
 
+message GetAllProductRequest{
+  int32 page = 1;
+  int32 limit =2;
+}
+
+
 service ProductService {
   rpc CreateProducts(CreateProduct) returns (ProductDetails);
-  rpc GetAllProducts(Empty) returns (ProductListResponse);
+  rpc GetAllProducts(GetAllProductRequest) returns (ProductListResponse);
   rpc GetProductById(GetProductByIdRequest) returns (ProductDetails);
   rpc DeleteProductById(DeleteProductByIdRequest) returns (DeleteProductByIdResponse);
 }

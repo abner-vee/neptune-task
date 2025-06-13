@@ -2,6 +2,7 @@ package com.neptunebank.order_service.service;
 
 import com.neptunebank.order_service.entity.Order;
 import com.neptunebank.order_service.repository.OrderRepository;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -29,8 +30,10 @@ public class OrderService {
         return orderRepository.save(order);
     }
 
-    public List<Order> findAllOrders() {
-        return orderRepository.findAll();
+    public List<Order> findAllOrders(int page, int limit) {
+        PageRequest pageRequest = PageRequest.of(page - 1, limit);
+        List<Order> list = orderRepository.findAll(pageRequest).getContent();
+        return list;
     }
 
     public Optional<Order> findById(Long id) {
