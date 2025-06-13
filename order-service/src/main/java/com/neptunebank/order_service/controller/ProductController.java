@@ -24,8 +24,10 @@ public class ProductController {
     }
 
     @GetMapping
-    public ResponseEntity<List<ProductResponse>> getAllProducts() {
-        List<ProductResponse> responses = client.getAllProducts().stream()
+    public ResponseEntity<List<ProductResponse>> getAllProducts(
+            @RequestParam(value = "page", defaultValue = "1") int page, @RequestParam(value = "limit", defaultValue = "10") int limit)
+    {
+        List<ProductResponse> responses = client.getAllProducts(page, limit).stream()
                 .map(proto -> ProductResponse.builder()
                         .id(proto.getId())
                         .name(proto.getName())
@@ -37,7 +39,7 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<ProductResponse> getProductById(@PathVariable Long id) {
+    public ResponseEntity<ProductResponse> getProductById(@PathVariable("id") Long id) {
         var proto = client.getProductById(id);
         ProductResponse response = ProductResponse.builder()
                 .id(proto.getId())
@@ -49,7 +51,7 @@ public class ProductController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Map<String, Object>> deleteProductById(@PathVariable Long id) {
+    public ResponseEntity<Map<String, Object>> deleteProductById(@PathVariable("id") Long id) {
         var resp = client.deleteProductByI(id);
         return ResponseEntity.ok(Map.of("success",true, "message",resp.getMessage()));
     }

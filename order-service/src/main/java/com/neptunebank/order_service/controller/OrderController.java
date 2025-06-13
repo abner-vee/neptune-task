@@ -42,8 +42,10 @@ public class OrderController {
 
 
     @GetMapping
-    public ResponseEntity<List<OrderResponse>> getAllOrders() {
-        List<OrderResponse> responses = orderService.findAllOrders().stream()
+    public ResponseEntity<List<OrderResponse>> getAllOrders(
+            @RequestParam(value = "page", defaultValue = "1") int page, @RequestParam(value = "limit", defaultValue = "10") int limit
+    ) {
+        List<OrderResponse> responses = orderService.findAllOrders(page, limit).stream()
                 .map(order -> OrderResponse.builder()
                         .success(order.getStatus() == Order.Status.CONFIRMED ? "success" : "failed")
                         .message("Order ID: " + order.getId() + " | Status: " + order.getStatus())
@@ -59,7 +61,7 @@ public class OrderController {
 
 
     @GetMapping("/{id}")
-    public ResponseEntity<OrderResponse> getOrderById(@PathVariable Long id) {
+    public ResponseEntity<OrderResponse> getOrderById(@PathVariable("id") Long id) {
         return orderService.findById(id)
                 .map(order -> ResponseEntity.ok(OrderResponse.builder()
                         .success(order.getStatus() == Order.Status.CONFIRMED ? "success" : "failed")
@@ -77,7 +79,7 @@ public class OrderController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Map<String, Object>> deleteOrder(@PathVariable Long id) {
+    public ResponseEntity<Map<String, Object>> deleteOrder(@PathVariable("id") Long id) {
         boolean deleted = orderService.deleteById(id);
         Map<String, Object> result = new HashMap<>();
         result.put("success", deleted);

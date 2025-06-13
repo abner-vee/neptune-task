@@ -48,13 +48,13 @@ public class InventoryClient {
     }
 
 
-    public List<ProductProto.ProductDetails> getAllProducts() {
+    public List<ProductProto.ProductDetails> getAllProducts(int page, int limit) {
         if (productStub == null) {
             throw new IllegalStateException("ProductService stub not initialized.");
         }
 
         ProductProto.ProductListResponse response = productStub.getAllProducts(
-                ProductProto.Empty.newBuilder().build()
+                ProductProto.GetAllProductRequest.newBuilder().setPage(page).setLimit(limit).build()
         );
         return response.getProductDetailsList();
     }
